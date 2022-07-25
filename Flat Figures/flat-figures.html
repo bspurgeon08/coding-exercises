@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="javascript:calculate()">
+      <label for="shape_input">Select Shape</label>
+      <select name="shape_input" id="shape_input">
+        <option value="circle">Circle</option>
+        <option value="square">Square</option>
+        <option value="rectangle">Rectangle</option>
+        <option value="triangle">Triangle</option>
+      </select>
+      <br /><br />
+      <div id="inputs_circle">
+        <label for="cir_radius">Radius: </label>
+        <input type="number" id="cir_radius"/>
+      </div>
+      <div id="inputs_square" hidden>
+        <label for="sq_length">Side Length: </label>
+        <input type="number" id="sq_length" />
+      </div>
+      <div id="inputs_rectangle" hidden>
+        <label for="rec_width">Width: </label>
+        <input type="number" id="rec_width" />
+        <br />
+        <label for="rec_length">Length: </label>
+        <input type="number" id="rec_length" />
+      </div>
+      <div id="inputs_triangle" hidden>
+        <label for="tri_sideA">Side A: </label>
+        <input type="number" id="tri_sideA" />
+        <br />
+        <label for="tri_sideB">Side B: </label>
+        <input type="number" id="tri_sideB" />
+        <br />
+        <label for="tri_sideC">Side C  (this is also the base side): </label>
+        <input type="number" id="tri_sideC" />
+        <br /><br />
+       
+        <label for="tri_height">Height: </label>
+        <input type="number" id="tri_height" />
+      </div>
+      <br /><br />
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="result_box">
+     
+    </div>
+    <script src="./flat-figures.js"></script>
+  </body>
+</html>
