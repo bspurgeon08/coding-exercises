@@ -10,6 +10,3 @@ numbers.sort((a, b) => {
 
 //expected output: [0, 1, 23, 43, 302]
 console.log(numbers);
-
-//not efficient -> time complexity of O(n log(n))
-//Could use bubble-sort or quick-sort algorithms? 
