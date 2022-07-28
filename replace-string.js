@@ -2,10 +2,15 @@
 
 //Function should take 3 elements: the string, the part to replace, the replacement
 const strReplace = (sStr, sDelete, sReplacement) =>{ 
-    return sStr.split(" ").map(sElement => {
+    if(typeof sStr === "string" && typeof sDelete === "string" && typeof sReplacement === "string") {
+         return sStr.split(" ").map(sElement => {
         return sElement === sDelete ? sReplacement  : sElement
     }).join(" ")
-    //return the string
+    } else {
+        return "all inputs must be strings";
+    }
+   
+
  
 }
 
